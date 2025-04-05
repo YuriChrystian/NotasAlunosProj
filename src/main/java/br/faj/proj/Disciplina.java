@@ -40,5 +40,15 @@ public class Disciplina {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    @Override
+    public String toString() {
+        return "Disciplina{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", dia_semana='" + dia_semana + '\'' +
+                ", descricao='" + descricao + '\'' +
+                '}';
+    }
 }
 //Uma Disciplina possui ID, nome, dia da semana, descrição, ...

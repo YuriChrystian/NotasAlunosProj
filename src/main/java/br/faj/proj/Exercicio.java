@@ -4,8 +4,8 @@ public class Exercicio {
     private int id;
     private String titulo;
     private String descricao;
-    private int data_inicio;
-    private int data_fim;
+    private String data_inicio;
+    private String data_fim;
     private float nota_maxima;
 
     public Exercicio() {
@@ -35,19 +35,19 @@ public class Exercicio {
         this.descricao = descricao;
     }
 
-    public int getData_inicio() {
+    public String getData_inicio() {
         return data_inicio;
     }
 
-    public void setData_inicio(int data_inicio) {
+    public void setData_inicio(String data_inicio) {
         this.data_inicio = data_inicio;
     }
 
-    public int getData_fim() {
+    public String getData_fim() {
         return data_fim;
     }
 
-    public void setData_fim(int data_fim) {
+    public void setData_fim(String data_fim) {
         this.data_fim = data_fim;
     }
 
@@ -57,6 +57,18 @@ public class Exercicio {
 
     public void setNota_maxima(float nota_maxima) {
         this.nota_maxima = nota_maxima;
+    }
+
+    @Override
+    public String toString() {
+        return "Exercicio{" +
+                "id=" + id +
+                ", titulo='" + titulo + '\'' +
+                ", descricao='" + descricao + '\'' +
+                ", data_inicio='" + data_inicio + '\'' +
+                ", data_fim='" + data_fim + '\'' +
+                ", nota_maxima=" + nota_maxima +
+                '}';
     }
 }
 //Um Exercício possui ID, título, descrição, data de início, data fim, nota máxima

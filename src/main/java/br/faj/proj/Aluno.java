@@ -31,4 +31,14 @@ public class Aluno {
     public void setTurma(String turma) {
         this.turma = turma;
     }
+
+
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "RA=" + RA +
+                ", nome='" + nome + '\'' +
+                ", turma='" + turma + '\'' +
+                '}';
+    }
 }
